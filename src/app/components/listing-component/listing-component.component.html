@@ -1,0 +1,14 @@
+<section>
+<div *ngFor="let member of list">
+<app-video-component 
+[id]= "member.id"
+[image] = "member.thumbnail_360_url"
+[title] = "member.title"
+[owner_image] = 'member["owner.avatar_80_url"]'
+[owner_name] = 'member["owner.username"]'
+[time] = "member.created_time"
+[views] =   "member.views_total"
+[PlayListPageRequest] = "playListPage"
+></app-video-component>
+</div>
+</section>

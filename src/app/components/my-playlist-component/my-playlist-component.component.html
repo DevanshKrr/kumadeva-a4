@@ -1,0 +1,8 @@
+<section>
+  <h1>My Playlist</h1>
+  <div *ngIf = "emptyList">
+    <h3>There are no videos in your playlist</h3>
+  </div>
+  <button *ngIf="!emptyList" (click) = "clearList()">Clear List</button>
+  <app-listing-component *ngIf="!emptyList" [list]="list" [playListPage]="true"></app-listing-component>
+  </section>

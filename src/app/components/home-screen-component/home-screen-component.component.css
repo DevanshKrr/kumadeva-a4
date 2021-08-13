@@ -1,0 +1,16 @@
+div{
+  display: flex;
+  padding: 10px;
+  justify-content: center;
+  border: 2px black;
+  column-gap: 5px;
+}
+div input{
+  font-size: 24px;
+  width: 30vw;
+  
+}
+
+div button{
+  font-size: 24px;
+}

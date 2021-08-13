@@ -1,0 +1,25 @@
+<section>
+<div class="mainImg"> 
+<img src= "{{image}}" />
+
+</div>
+<div class="info">
+<p><a href="https://www.dailymotion.com/video/{{id}}" target="_blank" class="title">{{title}}</a></p>
+<div class="owner">
+  <img src= "{{owner_image}}" class="owner_avatar" />
+  <span> {{owner_name}}</span>
+</div>
+<div class="dataVideo">
+<div class="datePosted">
+<span class="headings">Date Posted :</span>   {{time * 1000 | date}} <br/> 
+</div>
+<div class="views">
+<span class="headings">Views:</span> {{views}}
+</div>
+</div>
+<div *ngIf="(PlayListPageRequest===false)">
+  <button (click)= "AddToPlaylist()" [disabled] = "existsPlaylist">{{btnText}}</button>
+</div>
+
+</div>
+</section>

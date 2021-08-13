@@ -1,0 +1,22 @@
+section{
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.2);
+
+  margin: 0 auto;
+}
+h1{
+  font-size: 2em;
+}
+button{
+  margin: 1%;
+  height: 55px;
+  font-size: 20px;
+  color: purple;
+  border: 2px inset grey;
+  border-radius: 5px;
+  cursor: pointer;
+}
+section div{
+  padding: 20px;
+  margin: 10px;
+}
